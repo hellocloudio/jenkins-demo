@@ -1,8 +1,8 @@
 FROM alpine:3.5
 
-COPY ./hello-world /hello-world
+COPY ./src /src
 WORKDIR /
 
 EXPOSE 8080
 
-CMD [ "/hello-world", "-port", "8080"]
+CMD [ "/src", "-port", "8080"]
